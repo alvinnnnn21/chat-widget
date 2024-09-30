@@ -345,7 +345,7 @@ window.addEventListener('onEventReceived', function (obj) {
               '<img src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/1.0" srcset="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/1.0 1x, https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/2.0 2x, https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/3.0 4x" title="sarueiFire" class="emote">',
           },
         };
-        return;
+        break;
       case "replyMessage":
         detail = {
           listener: 'message',
@@ -447,7 +447,7 @@ window.addEventListener('onEventReceived', function (obj) {
               "@Redo_7 Did you know a penguin achieved knighthood? A penguin living in the Edinburgh Zoo was granted knighthood in 2008. The penguin, named Nils Olav III, is the mascot of the King of Norway's Guard, making it a special figure for the country's military, and the knighting ceremony, was an opportunity to celebrate the relations between Norway and Scotland.",
           },
         };
-        return;
+        break;
     }
 
     let emulated = new CustomEvent('onEventReceived', {
