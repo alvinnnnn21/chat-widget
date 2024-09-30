@@ -450,12 +450,9 @@ window.addEventListener('onEventReceived', function (obj) {
         break;
     }
 
-    console.log("ORENJI EVENT", (type == "replayMessage" ? "true" : "false") + " " + type);
-    console.log("ORENJI EVENT", type);
-
-    if (type != "replayMessage") 
+    if (obj.detail.event.field != "replayMessage") 
     { 
-      console.log("ORENJI TEST");
+      console.log("ORENJI TEST", obj.detail.event.field);
 
       let emulated = new CustomEvent('onEventReceived', {
         detail: detail
