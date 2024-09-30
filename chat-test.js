@@ -456,6 +456,8 @@ window.addEventListener('onEventReceived', function (obj) {
 
     window.dispatchEvent(emulated);
 
+    console.log("ORENJI EMOTE 4");
+
     if (obj.detail.event.field === "replayMessage") {
 
       console.log("ORENJI EMOTE 2");
