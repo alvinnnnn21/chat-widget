@@ -5,12 +5,12 @@ window.addEventListener('onWidgetLoad', function (obj) {
 window.addEventListener('onEventReceived', function (obj) {
   if (obj.detail.event.listener === 'widget-button') {
 
+    const event = obj.detail.event.field;
+
     let detail;
     let detail2;
     
-    console.log("ORENJI TEST MESSAGE", obj.detail.event.field);
-
-    switch (obj.detail.event.field) {
+    switch (event) {
       case "broadcasterMessage":
         detail = {
           listener: 'message',
@@ -456,9 +456,9 @@ window.addEventListener('onEventReceived', function (obj) {
 
     window.dispatchEvent(emulated);
 
-    console.log("ORENJI EMOTE 4");
+    console.log("ORENJI EMOTE 4", event);
 
-    if (obj.detail.event.field === "replayMessage") {
+    if (event === "replayMessage") {
 
       console.log("ORENJI EMOTE 2");
 
