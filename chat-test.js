@@ -450,6 +450,15 @@ window.addEventListener('onEventReceived', function (obj) {
         break;
     }
 
+    function logStringDetails(str) {
+      console.log("String:", str);
+      console.log("Length:", str.length);
+      console.log("Charcodes:", Array.from(str).map(c => c.charCodeAt(0)));
+    }
+    
+    logStringDetails(obj.detail.event.field);
+    logStringDetails("replayMessage");
+
     if (obj.detail.event.field != "replayMessage") 
     { 
       console.log("ORENJI TEST", obj.detail.event.field + " " + obj.detail.event.field.length);
