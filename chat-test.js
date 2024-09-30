@@ -350,67 +350,37 @@ window.addEventListener('onEventReceived', function (obj) {
           event: {
             service: 'twitch',
             data: {
-              time: 1688898729378,
+              time: 1688899241736,
               tags: {
-                'badge-info': 'subscriber/14',
-                badges: 'broadcaster/1,subscriber/0',
+                'badge-info': '',
+                badges: '',
                 color: '#FF69B4',
-                'display-name': channelNameOld,
-                'emote-only': '1',
-                emotes:
-                  'emotesv2_e6fd8cf6274a41ce92e744e2472440c4:0-9',
+                'display-name': 'Redo_7',
+                emotes: '',
                 'first-msg': '0',
                 flags: '',
-                id: '328c2bd1-5ece-454a-8788-352e7da38ce2',
+                id: '5e81cde0-9aa2-4434-a7bc-bb00d71e85a0',
                 mod: '0',
                 'returning-chatter': '0',
                 'room-id': '146575108',
-                subscriber: '1',
-                'tmi-sent-ts': '1688898728820',
+                subscriber: '0',
+                'tmi-sent-ts': '1688899241181',
                 turbo: '0',
-                'user-id': '146575108',
+                'user-id': '882005875',
                 'user-type': '',
               },
-              nick: channelNameOld,
-              userId: '146575108',
-              displayName: channelNameOld,
+              nick: 'redo_7',
+              userId: '882005875',
+              displayName: 'Redo_7',
               displayColor: '#FF69B4',
-              badges: [
-                {
-                  type: 'broadcaster',
-                  version: '1',
-                  url: 'https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/3',
-                  description: 'Broadcaster',
-                },
-                {
-                  type: 'subscriber',
-                  version: '0',
-                  url: 'https://static-cdn.jtvnw.net/badges/v1/5d9f2208-5dd8-11e7-8513-2ff4adfae661/3',
-                  description: 'Subscriber',
-                },
-              ],
-              channel: channelNameOld,
-              text: 'sarueiFire',
+              badges: [],
+              channel: 'redo_7',
+              text: 'May I have a random cool fact?',
               isAction: false,
-              emotes: [
-                {
-                  type: 'twitch',
-                  name: 'sarueiFire',
-                  id: 'emotesv2_e6fd8cf6274a41ce92e744e2472440c4',
-                  gif: false,
-                  urls: {
-                    '1': 'https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/1.0',
-                    '2': 'https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/2.0',
-                    '4': 'https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/3.0',
-                  },
-                  start: 0,
-                  end: 9,
-                },
-              ],
-              msgId: '328c2bd1-5ece-454a-8788-352e7da38ce2',
+              emotes: [],
+              msgId: '5e81cde0-9aa2-4434-a7bc-bb00d71e85a0',
             },
-            renderedText:
-              '<img src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/1.0" srcset="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/1.0 1x, https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/2.0 2x, https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e6fd8cf6274a41ce92e744e2472440c4/default/dark/3.0 4x" title="sarueiFire" class="emote">',
+            renderedText: 'May I have a random cool fact?',
           },
         };
         detail2 = {
@@ -489,7 +459,6 @@ window.addEventListener('onEventReceived', function (obj) {
         detail: detail2
       });
 
-      window.dispatchEvent(emulated);
       setTimeout(() => {
         window.dispatchEvent(emulated);
       }, 1500)
