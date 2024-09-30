@@ -7,6 +7,8 @@ window.addEventListener('onEventReceived', function (obj) {
 
     let detail;
     let detail2;
+    
+    console.log("ORENJI TEST MESSAGE", obj.detail.event.field);
 
     switch (obj.detail.event.field) {
       case "broadcasterMessage":
