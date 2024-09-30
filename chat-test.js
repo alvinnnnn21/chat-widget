@@ -457,11 +457,17 @@ window.addEventListener('onEventReceived', function (obj) {
     window.dispatchEvent(emulated);
 
     if (obj.detail.event.field === "replayMessage") {
+
+      console.log("ORENJI EMOTE 2");
+
       emulated = new CustomEvent('onEventReceived', {
         detail: detail2
       });
 
       setTimeout(() => {
+
+        console.log("ORENJI EMOTE 3");
+
         window.dispatchEvent(emulated);
       }, 1500)
     }
