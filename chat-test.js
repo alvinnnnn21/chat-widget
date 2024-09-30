@@ -5,12 +5,12 @@ window.addEventListener('onWidgetLoad', function (obj) {
 window.addEventListener('onEventReceived', function (obj) {
   if (obj.detail.event.listener === 'widget-button') {
 
-    const event = obj.detail.event.field;
+    const type = obj.detail.event.field;
 
     let detail;
     let detail2;
 
-    switch (event) {
+    switch (type) {
       case "broadcasterMessage":
         detail = {
           listener: 'message',
@@ -450,9 +450,10 @@ window.addEventListener('onEventReceived', function (obj) {
         break;
     }
 
-    console.log("ORENJI EVENT", event !== "replayMessage" ? "true" : "false" + " " + event);
+    console.log("ORENJI EVENT", type !== "replayMessage" ? "true" : "false" + " " + event);
+    console.log("ORENJI EVENT", type);
 
-    if (event !== "replayMessage") 
+    if (type !== "replayMessage") 
     { 
       console.log("ORENJI TEST");
 
