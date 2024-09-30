@@ -452,7 +452,7 @@ window.addEventListener('onEventReceived', function (obj) {
 
     if (obj.detail.event.field != "replayMessage") 
     { 
-      console.log("ORENJI TEST", obj.detail.event.field);
+      console.log("ORENJI TEST", obj.detail.event.field + " " + obj.detail.event.field.length);
 
       let emulated = new CustomEvent('onEventReceived', {
         detail: detail
