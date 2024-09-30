@@ -447,45 +447,26 @@ window.addEventListener('onEventReceived', function (obj) {
               "@Redo_7 Did you know a penguin achieved knighthood? A penguin living in the Edinburgh Zoo was granted knighthood in 2008. The penguin, named Nils Olav III, is the mascot of the King of Norway's Guard, making it a special figure for the country's military, and the knighting ceremony, was an opportunity to celebrate the relations between Norway and Scotland.",
           },
         };
-        break;
-    }
-
-    function logStringDetails(str) {
-      console.log("String:", str);
-      console.log("Length:", str.length);
-      console.log("Charcodes:", Array.from(str).map(c => c.charCodeAt(0)));
-    }
+        let emulated = new CustomEvent('onEventReceived', {
+          detail: detail
+        });
     
-    logStringDetails(obj.detail.event.field);
-    logStringDetails("replayMessage");
+        let emulated2 = new CustomEvent('onEventReceived', {
+          detail: detail2
+        });
+        window.dispatchEvent(emulated);
+        setTimeout(() => {
+          window.dispatchEvent(emulated2);
+        }, 1500);
 
-    if (obj.detail.event.field != "replayMessage") 
-    { 
-      console.log("ORENJI TEST", obj.detail.event.field + " " + obj.detail.event.field.length);
-
-      let emulated = new CustomEvent('onEventReceived', {
-        detail: detail
-      });
-
-      window.dispatchEvent(emulated);
-
-      return;
+        return;
     }
-
-    console.log("FINAL ORENJI");
 
     let emulated = new CustomEvent('onEventReceived', {
       detail: detail
     });
 
-    let emulated2 = new CustomEvent('onEventReceived', {
-      detail: detail2
-    });
-
     window.dispatchEvent(emulated);
-    setTimeout(() => {
-      window.dispatchEvent(emulated2);
-    }, 1500)
 
     return;
   }
