@@ -61,7 +61,7 @@ window.addEventListener('onEventReceived', function (obj) {
             renderedText: 'This is a broadcaster message!',
           },
         };
-        return;
+        break;
       case "moderatorMessage":
         detail = {
           listener: 'message',
@@ -123,7 +123,7 @@ window.addEventListener('onEventReceived', function (obj) {
               'Mod check <img src="https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/1x" srcset="https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/1x 1x, https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/2x 2x, https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/3x 4x" title="modCheck" class="emote">',
           },
         };
-        return;
+        break;
       case "vipMessage":
         detail = {
           listener: 'message',
@@ -186,7 +186,7 @@ window.addEventListener('onEventReceived', function (obj) {
               'Super cool VIP <img src="https://cdn.frankerfacez.com/emote/214129/1" srcset="https://cdn.frankerfacez.com/emote/214129/1 1x, https://cdn.frankerfacez.com/emote/214129/2 2x, https://cdn.frankerfacez.com/emote/214129/4 4x" title="POGGERS" class="emote">',
           },
         };
-        return;
+        break;
       case "subscriberMessage":
         detail = {
           listener: 'message',
@@ -233,7 +233,7 @@ window.addEventListener('onEventReceived', function (obj) {
             renderedText: 'Subscriber message!',
           },
         };
-        return;
+        break;
       case "regularMessage":
         detail = {
           listener: 'message',
@@ -273,7 +273,7 @@ window.addEventListener('onEventReceived', function (obj) {
             renderedText: 'A message from a regular viewer',
           },
         };
-        return;
+        break;
       case "emoteOnlyMessage":
         detail = {
           listener: 'message',
