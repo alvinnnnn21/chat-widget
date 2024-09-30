@@ -450,7 +450,7 @@ window.addEventListener('onEventReceived', function (obj) {
         break;
     }
 
-    console.log("ORENJI EVENT", event !== "replayMessage" ? "true" : "false");
+    console.log("ORENJI EVENT", event !== "replayMessage" ? "true" : "false" + " " + event);
 
     if (event !== "replayMessage") 
     { 
