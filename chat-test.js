@@ -9,7 +9,7 @@ window.addEventListener('onEventReceived', function (obj) {
 
     let detail;
     let detail2;
-    
+
     switch (event) {
       case "broadcasterMessage":
         detail = {
@@ -450,29 +450,30 @@ window.addEventListener('onEventReceived', function (obj) {
         break;
     }
 
+    if (event !== "replayMessage") {
+      let emulated = new CustomEvent('onEventReceived', {
+        detail: detail
+      });
+
+      window.dispatchEvent(emulated);
+
+      return;
+    }
+
+    console.log("FINAL ORENJI");
+
     let emulated = new CustomEvent('onEventReceived', {
       detail: detail
     });
 
+    let emulated2 = new CustomEvent('onEventReceived', {
+      detail: detail2
+    });
+
     window.dispatchEvent(emulated);
-
-    console.log("ORENJI EMOTE 4", event);
-
-    if (event === "replayMessage") {
-
-      console.log("ORENJI EMOTE 2");
-
-      emulated = new CustomEvent('onEventReceived', {
-        detail: detail2
-      });
-
-      setTimeout(() => {
-
-        console.log("ORENJI EMOTE 3");
-
-        window.dispatchEvent(emulated);
-      }, 1500)
-    }
+    setTimeout(() => {
+      window.dispatchEvent(emulated2);
+    }, 1500)
 
     return;
   }
