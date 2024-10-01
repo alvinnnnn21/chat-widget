@@ -332,8 +332,8 @@ window.addEventListener('onEventReceived', function (obj) {
                     '2': 'https://cdn.frankerfacez.com/emoticon/407882/2',
                     '4': 'https://cdn.frankerfacez.com/emoticon/407882/4',
                   },
-                  start: 0,
-                  end: 9,
+                  start: 30,
+                  end: 39,
                 },
                 {
                   type: 'ffz',
@@ -365,7 +365,9 @@ window.addEventListener('onEventReceived', function (obj) {
               msgId: 'a227f479-4a3d-4c2b-9e12-91657d191ece',
             },
             renderedText:
-              '<img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote"><img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote"><img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">',
+              `<img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">
+              <img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">
+              <img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">`,
           },
         };
         break;
