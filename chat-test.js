@@ -292,8 +292,7 @@ window.addEventListener('onEventReceived', function (obj) {
                 color: '#FF69B4',
                 'display-name': userChannel,
                 'emote-only': '1',
-                emotes:
-                  ['407882', '407882', '407882'],
+                emotes: '407882:0-8,10-18,20-28',
                 'first-msg': '0',
                 flags: '',
                 id: 'a227f479-4a3d-4c2b-9e12-91657d191ece',
@@ -319,7 +318,7 @@ window.addEventListener('onEventReceived', function (obj) {
                 },
               ],
               channel: userChannel,
-              text: 'CupBunny',
+              text: 'CupBunny CupBunny CupBunny',
               isAction: false,
               emotes: [
                 {
@@ -332,42 +331,15 @@ window.addEventListener('onEventReceived', function (obj) {
                     '2': 'https://cdn.frankerfacez.com/emoticon/407882/2',
                     '4': 'https://cdn.frankerfacez.com/emoticon/407882/4',
                   },
-                  start: 30,
-                  end: 39,
-                },
-                {
-                  type: 'ffz',
-                  name: 'CupBunny',
-                  id: '407882',
-                  gif: false,
-                  urls: {
-                    '1': 'https://cdn.frankerfacez.com/emoticon/407882/1',
-                    '2': 'https://cdn.frankerfacez.com/emoticon/407882/2',
-                    '4': 'https://cdn.frankerfacez.com/emoticon/407882/4',
-                  },
-                  start: 10,
-                  end: 19,
-                },
-                {
-                  type: 'ffz',
-                  name: 'CupBunny',
-                  id: '407882',
-                  gif: false,
-                  urls: {
-                    '1': 'https://cdn.frankerfacez.com/emoticon/407882/1',
-                    '2': 'https://cdn.frankerfacez.com/emoticon/407882/2',
-                    '4': 'https://cdn.frankerfacez.com/emoticon/407882/4',
-                  },
-                  start: 20,
-                  end: 29,
+                  positions: [[0, 8], [10, 18], [20, 28]]
                 },
               ],
               msgId: 'a227f479-4a3d-4c2b-9e12-91657d191ece',
             },
             renderedText:
-              `<img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">
-              <img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">
-              <img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">`,
+              '<img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote"> ' +
+              '<img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote"> ' +
+              '<img src="https://cdn.frankerfacez.com/emoticon/407882/1" srcset="https://cdn.frankerfacez.com/emoticon/407882/1 1x, https://cdn.frankerfacez.com/emoticon/407882/2 2x, https://cdn.frankerfacez.com/emoticon/407882/4 4x" title="CupBunny" class="emote">',
           },
         };
         break;
