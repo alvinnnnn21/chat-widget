@@ -168,7 +168,7 @@ window.addEventListener('onEventReceived', function (obj) {
                 },
               ],
               channel: userChannel,
-              text: 'VIP User Send A Message',
+              text: 'VIP User Send A Message CoolStoryBunny',
               isAction: false,
               emotes: [
                 {
@@ -181,8 +181,8 @@ window.addEventListener('onEventReceived', function (obj) {
                     '2': 'https://cdn.frankerfacez.com/emote/594713/2',
                     '4': 'https://cdn.frankerfacez.com/emote/594713/4',
                   },
-                  start: 22,
-                  end: 29,
+                  start: 24,
+                  end: 37,
                 },
               ],
               msgId: 'ef13af3d-b141-4e35-aa65-f388f83be35a',
