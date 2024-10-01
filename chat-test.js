@@ -1,9 +1,9 @@
-let channelName;
+let userChannel;
 
 const roomId = 342546591;
 
 window.addEventListener('onWidgetLoad', function (obj) {
-  channelName = obj.detail.channel.username;
+  userChannel = obj.detail.channel.username;
 })
 
 window.addEventListener('onEventReceived', function (obj) {
@@ -25,7 +25,7 @@ window.addEventListener('onEventReceived', function (obj) {
                 'badge-info': 'subscriber/14',
                 badges: 'broadcaster/1,subscriber/0',
                 color: '#4400FFFF',
-                'display-name': channelName,
+                'display-name': userChannel,
                 emotes: '',
                 'first-msg': '0',
                 flags: '',
@@ -39,9 +39,9 @@ window.addEventListener('onEventReceived', function (obj) {
                 'user-id': '342546591',
                 'user-type': '',
               },
-              nick: channelName,
+              nick: userChannel,
               userId: '342546591',
-              displayName: channelName,
+              displayName: userChannel,
               displayColor: '#4400FFFF',
               badges: [
                 {
@@ -57,7 +57,7 @@ window.addEventListener('onEventReceived', function (obj) {
                   description: 'Subscriber',
                 },
               ],
-              channel: channelName,
+              channel: userChannel,
               text: 'The streamer send a message!',
               isAction: false,
               emotes: [],
@@ -104,7 +104,7 @@ window.addEventListener('onEventReceived', function (obj) {
                   description: 'Moderator',
                 },
               ],
-              channel: channelName,
+              channel: userChannel,
               text: 'Moderator User Send a Message',
               isAction: false,
               emotes: [
@@ -167,7 +167,7 @@ window.addEventListener('onEventReceived', function (obj) {
                   description: 'VIP',
                 },
               ],
-              channel: channelName,
+              channel: userChannel,
               text: 'VIP User Send A Message',
               isAction: false,
               emotes: [
@@ -229,7 +229,7 @@ window.addEventListener('onEventReceived', function (obj) {
                   description: 'Subscriber',
                 },
               ],
-              channel: channelName,
+              channel: userChannel,
               text: 'Subscriber Send a Message!',
               isAction: false,
               emotes: [],
@@ -269,7 +269,7 @@ window.addEventListener('onEventReceived', function (obj) {
               displayName: 'Regular User',
               displayColor: '#FFC400FF',
               badges: [],
-              channel: channelName,
+              channel: userChannel,
               text: 'Regular User Send a Message!',
               isAction: false,
               emotes: [],
@@ -290,7 +290,7 @@ window.addEventListener('onEventReceived', function (obj) {
                 'badge-info': 'subscriber/14',
                 badges: 'broadcaster/1,subscriber/0',
                 color: '#FF69B4',
-                'display-name': channelName,
+                'display-name': userChannel,
                 'emote-only': '1',
                 emotes:
                   '407882',
@@ -318,7 +318,7 @@ window.addEventListener('onEventReceived', function (obj) {
                   description: 'Subscriber',
                 },
               ],
-              channel: channelName,
+              channel: userChannel,
               text: 'CupBunny',
               isAction: false,
               emotes: [
@@ -416,9 +416,9 @@ window.addEventListener('onEventReceived', function (obj) {
                 'user-id': '370315518',
                 'user-type': '',
               },
-              nick: channelName,
+              nick: userChannel,
               userId: '370315518',
-              displayName: channelName,
+              displayName: userChannel,
               displayColor: '#00FF99FF',
               badges: [
                 {
@@ -428,7 +428,7 @@ window.addEventListener('onEventReceived', function (obj) {
                   description: 'Subscriber',
                 },
               ],
-              channel: channelNameOld,
+              channel: userChannelOld,
               text: "@ORENJI The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.",
               isAction: false,
               emotes: [],
