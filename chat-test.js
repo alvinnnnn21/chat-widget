@@ -293,7 +293,7 @@ window.addEventListener('onEventReceived', function (obj) {
                 'display-name': userChannel,
                 'emote-only': '1',
                 emotes:
-                  '407882',
+                  ['407882', '407882', '407882'],
                 'first-msg': '0',
                 flags: '',
                 id: 'a227f479-4a3d-4c2b-9e12-91657d191ece',
